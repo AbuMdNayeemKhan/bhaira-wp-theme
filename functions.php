@@ -23,4 +23,28 @@ function bhaira_css_js_file_calling() {
 
 add_action( 'wp_enqueue_scripts', 'bhaira_css_js_file_calling');
 
+// Theme Function header er logo change koarar opton create.
+function bhaira_customizer_register($wp_customize){
+    // header er logo change er option toiri kora hoiche.
+    $wp_customize->add_section('bhaira_header_area', array(
+        'title' =>__('Header Area', 'bhaira-theme'),
+        'description' => 'If you interested to update your header. you can do it here.'
+    ));
+
+    // akta setting add kore default site logo select kore dilam.
+    $wp_customize->add_setting('bhaira_logo', array(
+        'default' => get_bloginfo('template_directory') . '/img/bhaira-logo.svg',
+    ));
+
+    // site er jonno ekta contro set korlam
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'bhaira_logo', array(
+        'label' => 'Logo Upload',
+        'description' => 'If you interest to update your header area, you can do it here.',
+        'setting' => 'bhaira_logo',
+        'section' => 'bhaira_header_area',
+    )));
+}
+ 
+add_action( 'customize_register', 'bhaira_customizer_register' )
+
 ?>
