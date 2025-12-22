@@ -25,7 +25,7 @@ add_action( 'wp_enqueue_scripts', 'bhaira_css_js_file_calling');
 
 // Google font Enqueue
 function bhaira_add_google_font(){
-    wp_enqueue_style( 'bhaira_google_fonts', 'https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap' false);
+    wp_enqueue_style( 'bhaira_google_fonts', 'https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap', false);
 }
 
 add_action( 'wp_enqueue_scripts', 'bhaira_add_google_font' );
@@ -52,6 +52,8 @@ function bhaira_customizer_register($wp_customize){
     )));
 }
  
-add_action( 'customize_register', 'bhaira_customizer_register' )
+add_action( 'customize_register', 'bhaira_customizer_register' );
+
+register_nav_menu( 'primary_menu', __('Main Menu', 'bhaira-theme') );
 
 ?>
