@@ -1,6 +1,43 @@
-/* Common css */
-body {
-  background-color: orange;
+/* Header section start */
+/* Reset */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
 }
-/* Common CSS */
 
+/* Menu link */
+.nav-menu li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+    position: relative;
+    padding: 6px 0;
+    transition: color 0.3s ease;
+}
+
+/* Hover underline animation */
+.nav-menu li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #2563eb; /* blue */
+    transition: width 0.3s ease;
+}
+
+/* Hover effect */
+.nav-menu li a:hover {
+    color: #2563eb;
+}
+
+.nav-menu li a:hover::after {
+    width: 100%;
+}
+/* Header section ended */

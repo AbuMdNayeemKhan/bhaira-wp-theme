@@ -17,9 +17,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-3">
-                    <a href="#"><img src="<?php echo get_template_directory_uri();?>/img/bhaira-logo.svg" alt=""></a>
+                    <a href="#"><img src="<?php echo get_theme_mod( 'bhaira_logo' )?>" alt="" class='img-fluid'></a>
                 </div>
-                <div class="col-9"></div>
+                <div class="col-9">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Price</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

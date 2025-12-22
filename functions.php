@@ -36,7 +36,7 @@ function bhaira_customizer_register($wp_customize){
         'default' => get_bloginfo('template_directory') . '/img/bhaira-logo.svg',
     ));
 
-    // site er jonno ekta contro set korlam
+    // Header er logor jonno ekta contro set korlam
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'bhaira_logo', array(
         'label' => 'Logo Upload',
         'description' => 'If you interest to update your header area, you can do it here.',
