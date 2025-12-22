@@ -1,3 +1,8 @@
+/* Common style for theme start*/
+h1, h2, h3, h4, h5, h6{
+    font-family: "BBH Bartle", sans-serif;
+}
+/* Common style for theme ended */
 /* Header section start */
 /* Reset */
 .nav-menu {

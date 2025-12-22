@@ -13,20 +13,54 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <div id="header_area">
+    <div id="header_area" class=' py-3'>
         <div class="container">
             <div class="row">
                 <div class="col-3">
                     <a href="#"><img src="<?php echo get_theme_mod( 'bhaira_logo' )?>" alt="" class='img-fluid'></a>
                 </div>
                 <div class="col-9">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Price</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                    <nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+                        <div class="collapse navbar-collapse" id="mainNavbar">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            
+                            <!-- Normal nav items -->
+                            <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                            </li>
+
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                            </li>
+
+                            <!-- Dropdown -->
+                                <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                                    <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                                    <li><a class="dropdown-item" href="#">Careers</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>

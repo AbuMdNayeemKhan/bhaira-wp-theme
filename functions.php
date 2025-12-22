@@ -23,6 +23,13 @@ function bhaira_css_js_file_calling() {
 
 add_action( 'wp_enqueue_scripts', 'bhaira_css_js_file_calling');
 
+// Google font Enqueue
+function bhaira_add_google_font(){
+    wp_enqueue_style( 'bhaira_google_fonts', 'https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap' false);
+}
+
+add_action( 'wp_enqueue_scripts', 'bhaira_add_google_font' );
+
 // Theme Function header er logo change koarar opton create.
 function bhaira_customizer_register($wp_customize){
     // header er logo change er option toiri kora hoiche.
