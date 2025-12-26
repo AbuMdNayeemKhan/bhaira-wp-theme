@@ -3,46 +3,47 @@ h1, h2, h3, h4, h5, h6{
     font-family: "BBH Bartle", sans-serif;
 }
 /* Common style for theme ended */
-/* Header section start */
-/* Reset */
-.nav-menu {
+
+/* Nav section start */
+#nav-menu {
     list-style: none;
     display: flex;
-    gap: 30px;
-    padding: 0;
-    margin: 0;
-    align-items: center;
+    justify-content: center;
 }
 
-/* Menu link */
-.nav-menu li a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    color: #222;
+#nav-menu li {
     position: relative;
-    padding: 6px 0;
-    transition: color 0.3s ease;
+    list-style-type: none;
 }
 
-/* Hover underline animation */
-.nav-menu li a::after {
-    content: "";
+#nav-menu li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+#nav-menu li a:hover {
+    background-color: #ff9800;
+}
+
+/* Dropdown */
+.dropdown-menu {
     position: absolute;
+    top: 100%;
     left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;
-    background-color: #2563eb; /* blue */
-    transition: width 0.3s ease;
+    background-color: #333;
+    min-width: 200px;
+    list-style: none;
+    display: none;
 }
 
-/* Hover effect */
-.nav-menu li a:hover {
-    color: #2563eb;
+.dropdown-menu li a {
+    padding: 10px 15px;
 }
 
-.nav-menu li a:hover::after {
-    width: 100%;
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
-/* Header section ended */
+/* Nav section ended */

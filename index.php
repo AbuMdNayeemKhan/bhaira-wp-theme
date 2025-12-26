@@ -16,11 +16,11 @@
     <div id="header_area" class=' py-3'>
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-3 align-self-center">
                     <a href="#"><img src="<?php echo get_theme_mod( 'bhaira_logo' )?>" alt="" class='img-fluid'></a>
                 </div>
-                <div class="col-9">
-                    <?php wp_nav_menu( array('theme_location' => 'main_menu', 'menu_id' => 'nav'));?>
+                <div class="col-9 align-self-center">
+                    <?php wp_nav_menu( array('theme_location' => 'primary_menu', 'menu_id' => 'nav-menu'));?>
                 </div>
                     
 <?php wp_footer(); ?>

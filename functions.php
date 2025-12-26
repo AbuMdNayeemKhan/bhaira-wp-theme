@@ -50,10 +50,25 @@ function bhaira_customizer_register($wp_customize){
         'setting' => 'bhaira_logo',
         'section' => 'bhaira_header_area',
     )));
+
+    // Menu Position Option
+    $wp_customize->add_section('bhaira_menu_option', array(
+        'title' => __('Menu Position Option', 'bhaira-theme'),
+        'discription' => 'If you interest to change your menu position you can do it.',
+    ));
+
+    $wp_customize->add_setting('bhaira_menu_position', array(
+        'default' => 'right_menu',
+    ));
+
+    $wp_customize-> add_control('bhaira_menu_position', array(
+        
+    ));
 }
  
 add_action( 'customize_register', 'bhaira_customizer_register' );
 
+// Menu Ragister function
 register_nav_menu( 'primary_menu', __('Main Menu', 'bhaira-theme') );
 
 ?>
