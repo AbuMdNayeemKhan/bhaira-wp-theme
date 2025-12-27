@@ -5,7 +5,7 @@
 
 // Theme Title
 add_theme_support('title-tag');
-
+ 
 // Theme CSS an JavaScript file calling
 function bhaira_css_js_file_calling() {
     // CSS File calling
@@ -62,7 +62,16 @@ function bhaira_customizer_register($wp_customize){
     ));
 
     $wp_customize-> add_control('bhaira_menu_position', array(
-        
+        'label' => 'Menu Position',
+        'discription' => 'Select your menu position',
+        'setting' => 'bhaira_menu_position',
+        'section' => 'bhaira_menu_option',
+        'type' => 'radio',
+        'choices' => array(
+            'left_menu' => 'Left Menu',
+            'right_menu' => 'Right Menu',
+            'center_menu' => 'Center Menu',
+        ),
     ));
 }
  

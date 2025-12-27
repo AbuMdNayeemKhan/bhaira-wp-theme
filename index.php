@@ -13,13 +13,13 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <div id="header_area" class=' py-3'>
+    <div id="header_area" class=' <?php echo get_theme_mod('bhaira_menu_position')?> py-3'>
         <div class="container">
             <div class="row">
-                <div class="col-3 align-self-center">
+                <div class="col-md-3 align-self-center">
                     <a href="#"><img src="<?php echo get_theme_mod( 'bhaira_logo' )?>" alt="" class='img-fluid'></a>
                 </div>
-                <div class="col-9 align-self-center">
+                <div class="col-md-9 align-self-center">
                     <?php wp_nav_menu( array('theme_location' => 'primary_menu', 'menu_id' => 'nav-menu'));?>
                 </div>
                     
