@@ -51,7 +51,7 @@ function bhaira_customizer_register($wp_customize){
         'section' => 'bhaira_header_area',
     )));
 
-    // Menu Position Option
+    // Menu Position Option start
     $wp_customize->add_section('bhaira_menu_option', array(
         'title' => __('Menu Position Option', 'bhaira-theme'),
         'discription' => 'If you interest to change your menu position you can do it.',
@@ -73,6 +73,23 @@ function bhaira_customizer_register($wp_customize){
             'center_menu' => 'Center Menu',
         ),
     ));
+    // Menu Position Option ended
+
+    // Footer opthon start
+    $wp_customize -> add_section('bhaira_footer_option', array(
+        'title' => __('Footer Option', 'bhaira-theme'),
+        'discription' => 'If you interested to change or update your footer settings you can do it.',
+    ));
+    $wp_customize -> add_setting('bhaira_copyright_section', array(
+        'default' => '&copy; Copyright 2025 || Bhaira',
+    ));
+    $wp_customize -> add_control('ali_copyright_section', array(
+        'label' => 'If need you can',
+        'discription' => 'if need you can update your copyright text from here',
+        'setting' => 'bhaira_copyright_section',
+        'section' => 'bhaira_footer_option',
+    ));
+    // Footer option ended
 }
  
 add_action( 'customize_register', 'bhaira_customizer_register' );
