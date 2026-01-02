@@ -70,3 +70,17 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 /* Menu Position ended */
+
+/* Footer section start */
+#copyright_area{
+    background-color: #e6dcdc;
+    padding: 15px;
+}
+#copyright_area a{
+color: #DE335F;
+text-decoration: none;
+}
+#copyright_area a:hover{
+text-decoration: underline;
+}
+/* Footer section ended */

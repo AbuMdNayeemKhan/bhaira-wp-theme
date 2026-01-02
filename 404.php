@@ -25,18 +25,8 @@
             </div>
         </div>
     </header>
-
-    <section id='body_area'>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <?php the_content();?>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer id="footer_area">
+<h1 class="text-center py-5">This is 404 page</h1>
+<footer id="footer_area">
         <section id="copyright_area">
             <div class="container">
                 <div class="row">

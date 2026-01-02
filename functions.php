@@ -54,7 +54,7 @@ function bhaira_customizer_register($wp_customize){
     // Menu Position Option start
     $wp_customize->add_section('bhaira_menu_option', array(
         'title' => __('Menu Position Option', 'bhaira-theme'),
-        'discription' => 'If you interest to change your menu position you can do it.',
+        'description' => 'If you interest to change your menu position you can do it.',
     ));
 
     $wp_customize->add_setting('bhaira_menu_position', array(
@@ -63,7 +63,7 @@ function bhaira_customizer_register($wp_customize){
 
     $wp_customize-> add_control('bhaira_menu_position', array(
         'label' => 'Menu Position',
-        'discription' => 'Select your menu position',
+        'description' => 'Select your menu position',
         'setting' => 'bhaira_menu_position',
         'section' => 'bhaira_menu_option',
         'type' => 'radio',
@@ -76,18 +76,21 @@ function bhaira_customizer_register($wp_customize){
     // Menu Position Option ended
 
     // Footer opthon start
-    $wp_customize -> add_section('bhaira_footer_option', array(
-        'title' => __('Footer Option', 'bhaira-theme'),
-        'discription' => 'If you interested to change or update your footer settings you can do it.',
+    $wp_customize->add_section('bhaira_footer_option', array(
+        'title'       => __('Footer Option', 'bhaira-theme'),
+        'description' => 'If you are interested in changing or updating your footer settings, you can do it here.',
     ));
-    $wp_customize -> add_setting('bhaira_copyright_section', array(
+
+    $wp_customize->add_setting('bhaira_copyright_section', array(
         'default' => '&copy; Copyright 2025 || Bhaira',
     ));
-    $wp_customize -> add_control('ali_copyright_section', array(
-        'label' => 'If need you can',
-        'discription' => 'if need you can update your copyright text from here',
-        'setting' => 'bhaira_copyright_section',
-        'section' => 'bhaira_footer_option',
+
+    $wp_customize->add_control('bhaira_copyright_section', array(
+        'label'       => 'Copyright Text',
+        'description' => 'You can update your copyright text from here.',
+        'setting'     => 'bhaira_copyright_section',
+        'section'     => 'bhaira_footer_option',
+        'type'        => 'text',
     ));
     // Footer option ended
 }
