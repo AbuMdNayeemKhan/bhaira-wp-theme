@@ -17,7 +17,7 @@ add_action( 'wp_enqueue_scripts', 'bhaira_css_js_file_calling');
 
 // Google font Enqueue
 function bhaira_add_google_font(){
-    wp_enqueue_style( 'bhaira_google_fonts', 'https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap', false);
+    wp_enqueue_style( 'bhaira_google_fonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet', false);
 }
 add_action( 'wp_enqueue_scripts', 'bhaira_add_google_font' );
 ?>

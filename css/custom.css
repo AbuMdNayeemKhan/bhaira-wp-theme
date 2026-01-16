@@ -1,6 +1,6 @@
 /* Common style for theme start*/
-h1, h2, h3, h4, h5, h6{
-    font-family: "BBH Bartle", sans-serif;
+h1, h2, h3, h4, h5, h6, p{
+    font-family: "Roboto", sans-serif;
 }
 /* Common style for theme ended */
 
@@ -47,19 +47,6 @@ h1, h2, h3, h4, h5, h6{
     display: block;
 }
 /* Nav section ended */
-
-/* Notice section start */
-#notice{
-    text-align: center;
-    background-color: #635a5a;
-    padding: 10px 0;
-    margin-bottom: 10px;
-}
-#notice p{
-    margin: 0;
-    color: #FFFFFF;
-}
-/* Notice section ended */
 
 /* Menu Position start*/
 #header_area.left_menu .col-md-3{
