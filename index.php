@@ -13,7 +13,7 @@
                             <?php echo the_post_thumbnail('post-thumbnails');?>
                         </div>
                         <div class="post_details">
-                            <h2><a href="#"><?php the_title(); ?></a></h2>
+                            <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
                             <?php the_excerpt();?>
                         </div>
                     </div>
