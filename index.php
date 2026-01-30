@@ -23,6 +23,12 @@
                             _e('No post found');
                         endif;
                     ?>
+                    <div id="page_nav">
+                        <?php if('bhaira_pagenav'){bhaira_pagenav();} else{?>
+                            <?php next_posts_link( );?>
+                            <?php previous_posts_link();?>
+                        <?php } ?>
+                    </div>
                 </div>
                 <div class="col-md-3">
                     <h2>Thie Sitebar area</h2>
