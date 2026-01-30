@@ -72,11 +72,31 @@ h1, h2, h3, h4, h5, h6, p{
 /* Menu Position ended */
 
 /* Index page style start */
-#body_area{padding: 45px 0; display: none !important;}
-#body_area .blog_area{width: 100%; margin-bottom: 15px;};
-#body_area .blog_thumb{width: 100%; margin-bottom: 15px;};
-#body_area .blog_thumb img{width: 100%; display: block};
+#body_area{
+    padding: 45px 0;
+}
+#body_area .blog_area{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#body_area .post_thumb{
+    width: 100%; 
+    margin-bottom: 15px;
+}
+#body_area .post_thumb img{
+    width: 100%; 
+    display: block;
+}
+#body_area .post_details h2 a{
+    color: red;
+    text-decoration: none;
+    margin-top: 100px;
+}
 
+.excerpt-readmore-btn{
+    text-decoration: none;
+    color: red;
+}
 /* Index page style ended */
 
 /* Footer section start */
@@ -84,6 +104,7 @@ h1, h2, h3, h4, h5, h6, p{
     background-color: #e6dcdc;
     padding: 15px;
 }
+
 #copyright_area a{
 color: #DE335F;
 text-decoration: none;
